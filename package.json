@@ -1,0 +1,24 @@
+{
+  "name": "challenge-qa",
+  "version": "1.0.0",
+  "description": "Este teste faz parte do nosso processo de seleção e visa avaliar suas habilidades técnicas. A tarefa consiste em interpretar e executar as atividades descritas nos cards criados no Jira, utilizando as tecnologias listadas abaixo. Esperamos que você entregue um projeto contendo as instruções de instalação e execução dos testes automatizados, além da definição e redação dos  cenários de teste, bem como a identificação e documentação de bug já conhecido pelo cliente, mas ainda não documentado.",
+  "main": "index.js",
+  "video": true, 
+  "videoCompression": 32, 
+  "screenshotsFolder": "cypress/screenshots", 
+  "videosFolder": "cypress/videos", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.15.2",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/step_definitions"
+  }
+}
